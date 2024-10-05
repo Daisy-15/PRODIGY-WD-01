@@ -6,14 +6,7 @@ module.exports = {
     './public/js/*.js',    // If you have any JavaScript files to scan
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        'custom-bg': "url('/images/hero-bg.jpeg')",
-      },
-      backgroundSize: {
-        'custom-size': "50% 100%",
-      }
-    },
+    extend: {},
   },
   plugins: [],
 };

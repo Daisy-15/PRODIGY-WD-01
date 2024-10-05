@@ -1,14 +1,17 @@
 <!doctype html>
-<html lang="en">
+<html  lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Interactive Navbar</title>
   <link href="./public/css/input.css" rel="stylesheet" type="text/css">
-  <link href="./public/css/output.css" rel="stylesheet" type="text/css">
+  <link href ="./public/css/output.css" rel="stylesheet" type="text/css">
+  
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+
+<!-- <body class="bg-custom-size bg-custom-bg bg-no-repeat bg-right"> -->
 
 <body>
   <!-- Navigation Menu -->
@@ -17,58 +20,41 @@
     <div class="container mx-auto flex justify-between items-center">
       <!-- icon -->
       <a href="#">
-        <img src="./public/images/logo.png" alt="Logo" class="h-12 px-4 md:px-16">
+        <img src="./public/images/logo.png" alt="Logo" class="h-12 px-16">
       </a>
-      <!-- Hamburger Menu Button -->
-      <div class="md:hidden">
-        <button id="menu-button" class="text-white focus:outline-none pl-80">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-          </svg>
-        </button>
-      </div>
       <!-- links -->
-      <ul class="flex space-x-4 md:space-x-8">
+      <ul class="flex space-x-8">
         <li class="nav-item p-2 rounded font-serif text-lg "> <a href="#">Home</a></li>
         <li class="nav-item p-2 rounded font-serif text-lg"> <a href="#">About</a></li>
         <li class="nav-item p-2 rounded font-serif text-lg"> <a href="#">Services</a> </li>
         <li class="nav-item p-2 rounded font-serif text-lg"> <a href="#">Contact</a> </li>
+        <li></li>
       </ul>
     </div>
   </nav>
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden">
-    <ul class="flex flex-col space-y-2">
-      <li class="nav-item p-2 rounded font-serif text-lg"> <a href="#">Home</a></li>
-      <li class="nav-item p-2 rounded font-serif text-lg"> <a href="#">About</a></li>
-      <li class="nav-item p-2 rounded font-serif text-lg"> <a href="#">Services</a></li>
-      <li class="nav-item p-2 rounded font-serif text-lg"> <a href="#">Contact</a></li>
-    </ul>
-  </div>
 
   <!-- Hero Section -->
-  <section class="relative flex flex-col md:flex-row pt-16">
-    <div class="w-full md:w-1/2 h-auto">
-      <img src="./public/images/hero-bg.jpeg" alt="Ballet" class="h-full w-full object-cover">
+  <section class="relative flex">
+    <div class="w-1/2">
+        <img src="./public/images/hero-bg.jpeg" alt="Ballet" class="h-full w-full object-cover rounded-t-lg">
     </div>
     <!-- heading -->
-    <div class="relative z-10 flex flex-col items-end justify-center min-h-screen w-full md:w-1/2 pr-4 md:pr-16">
-      <h2
-        class="text-4xl font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent leading-tight">
-        Dance Styles
-      </h2>
-      <p class="mt-4 text-xl text-gray-600 font-medium max-w-md text-right">
-        Discover and celebrate diverse dance styles from around the world, showcasing the beauty of movement and
-        culture!
-      </p>
-      <a href="#"
-        class="mt-6 px-6 py-2 border-2 border-black text-black bg-transparent rounded hover:bg-gray-200 transition duration-300">
-        Contact Us
-      </a>
+    <div class="relative z-10 flex flex-col items-end justify-center min-h-screen w-1/2 pr-16">
+        <h2 class="text-4xl font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent leading-tight">
+            Dance Styles
+        </h2>
+        <p class="mt-4 text-xl text-gray-600 font-medium max-w-md text-right">
+            Discover and celebrate diverse dance styles from around the world, showcasing the beauty of movement and culture!
+        </p>
+        <a href="#"
+            class="mt-6 px-6 py-2 border-2 border-black text-black bg-transparent rounded hover:bg-gray-200 transition duration-300">
+            Contact Us
+        </a>
     </div>
-  </section>
+</section>
 
-  <!-- Feature Section -->
+
+  <!-- feature section -->
   <section class="bg-gray-100 py-12">
     <div class="container mx-auto">
       <h2 class="text-3xl font-bold text-center">Dance Styles Features</h2>
@@ -105,7 +91,7 @@
 
           <div
             class="bg-white p-4 rounded-lg shadow-lg w-3/12 transform transition-transform duration-300 hover:scale-95">
-            <img src="./public/images/salsa.png" alt="Salsa" class="h-40 w-full object-cover rounded-t-lg">
+            <img src="./public/images/salsa.png" alt="Salsa" class="h-40 w-full object-cover rounded-t-lg top-60">
             <h3 class="text-xl font-semibold mt-4">Salsa</h3>
             <p class="mt-2 text-gray-600">A lively Latin dance characterized by vibrant energy and rhythm.</p>
             <a href="#"
